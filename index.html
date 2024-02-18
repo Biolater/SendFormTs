@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <form id="form">
+        <div class="form-item">
+          <label for="userName">Username:</label>
+          <input type="text" id="userName" />
+        </div>
+        <div class="form-item">
+          <label for="fullName">Fullname:</label>
+          <input type="text" id="fullName" />
+        </div>
+        <div class="form-item">
+          <label for="age">Age:</label>
+          <input type="number" id="age" />
+        </div>
+        <button title="submit data" id="submit" type="submit">Submit</button>
+      </form>
+      <h1>Request sent to DB with below request data</h1>
+      <ul>
+        <li class="recived-username"></li>
+        <li class="recived-fullname"></li>
+        <li class="recived-age"></li>
+      </ul>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
